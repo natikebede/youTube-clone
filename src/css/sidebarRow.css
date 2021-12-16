@@ -1,0 +1,54 @@
+.sidebar-row
+{
+    display :flex;
+    margin:3px 0px;
+    padding:10px 20px;
+    align-items: center;
+    transition: ease 0.3s;
+    
+   
+}
+.sidebar-row:hover  
+{
+    background-color:lightgray;
+    cursor:pointer
+    
+}
+.sidebar-row:hover >.icon 
+{
+    color:red;
+    cursor:pointer
+    
+}
+.sidebar-row:hover >.titles
+{
+    font-weight: bold;
+    
+}
+.sidebar-row.selected
+{
+    background-color:lightgray;
+    
+}
+.sidebar-row.selected>.icon
+{
+    color :red;
+
+}
+.sidebar-row.selected>.titles
+{
+    font-weight: bold;
+}
+.titles
+{   flex:1;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.icon
+{
+    font-size: larger !important;
+    color:gray;
+    font-size: larger;   
+    margin-right: 12px;
+}

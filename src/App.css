@@ -1,0 +1,15 @@
+.bodys
+{
+  
+  background-color:white;
+  font-family: 'roboto',sans-serif;
+  width: 100%;
+  height: 100%;
+  
+}
+.navs
+{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
