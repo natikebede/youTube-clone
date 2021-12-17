@@ -1,23 +1,17 @@
 /*css for the nav bar*/
 .navbar
 {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index:100;
+  
     background-color: white;
     display:flex;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
+  
     justify-content: space-between;
 
         
 }
-.navbar-left
-{
 
-
-}
 
   .openbtn {
     font-size: 20px;
@@ -82,26 +76,41 @@
 @media only screen and (max-width: 600px) {
     input[type='search']
     {
-        display:none;
+    
+        width: 75%;
+       flex:1;
     }
     div.search-box
     {
-    width:auto;
-    border:0;
+        width: 55%;
+        margin:0px 2px;
+       
     }
    div .logo
   {
       height: 30px;
+      margin-left:5px;
       
   }
-  div.search
+ 
+  div.icon-coll
   {
-     
-      border:0;
-      color: black;
-      background-color: white;
+      display:none;
 
   }
+  div.img-icon
+  {
+      margin:2px;
+      
+  }
+  div.Icons
+  {
+      margin:0px
+}
+div.navbar
+{
+    padding:10px;
+}
 
     
   
@@ -126,6 +135,21 @@
     color:black;
     border-radius: 2px;
     margin-left: 5px;
+    font-weight: lighter;
+    cursor: pointer;
     
 
+}
+.img-icon
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+.img
+{
+    object-fit:fill;
+    width:100%
 }

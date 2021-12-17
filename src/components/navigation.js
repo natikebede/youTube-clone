@@ -2,10 +2,10 @@ import '../css/default_css.css';
 import {useState} from 'react';
 import '../css/navigation.css';
 import '../css/fontawesome.min.css';
-import {MdSearch,MdViewComfy,  MdOutlineUpload,MdBackspace ,MdOutlineMenu } from 'react-icons/md'
+import {MdSearch,MdViewComfy,  MdOutlineUpload,MdBackspace ,MdOutlineMenu ,MdVideoCameraFront} from 'react-icons/md'
 import {AiTwotoneBell} from 'react-icons/ai';
 
-function Navigation()
+function Navigation(props)
 {
     const [searchisclicked, setclick]=useState(false);
     function displaysearch()
@@ -26,10 +26,10 @@ function Navigation()
     }
     return(
     
-        <div className="navbar">
+        <div className="navbar ">
             
             <div className="">
-           <MdOutlineMenu className="openbtn"/>
+           <MdOutlineMenu className="openbtn" onClick={props.onClick}/>
             <img src={require('../assets/download.png').default} className="logo" alt="youtube log"/> 
             </div>
             
@@ -44,11 +44,16 @@ function Navigation()
                 </div>
                  
             </div>
-            <div className="Icons" id="icons">
+            <div className="Icons " id="icons">
+                
+                <div className="icons icon-coll"> <MdVideoCameraFront fontSize="1.5rem"/> </div>
+                <div className="icons icon-coll"> <MdViewComfy fontSize="1.5rem"/> </div>
+                <div className="icons icon-coll"> <AiTwotoneBell fontSize="1.5rem"/> </div>
+                <div className="icons icon-coll"> <MdOutlineUpload fontSize="1.5rem"/> </div>
                
-                <div className="icons"> <MdViewComfy fontSize="1.5rem"/> </div>
-                <div className="icons"> <AiTwotoneBell fontSize="1.5rem"/> </div>
-                <div className="icons"> <MdOutlineUpload fontSize="1.5rem"/> </div>
+                <div className="img-icon">
+                <img src='assets/blog/comments-3.jpg' className="img-icon img"  alt="youtube log"/> 
+                </div>
             </div>
 
 

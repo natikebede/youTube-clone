@@ -1,33 +1,41 @@
-import React, { Component } from "react";
+
 import Navigation from './components/navigation.js';
 import Sidebar from './components/sidebar.js';
 import Recommendation from './components/recommendation.js';
 import './App.css';
 import './css/default_css.css';
+import {useState} from "react";
 
-class App extends  Component
+function App()
 {
-  render()
-  {
-
+ function collapes_handller()
+ {
+   setisopen(!isopen);
+ }
+ 
+   const[isopen ,setisopen]=useState(false);
     return (
     <div className="bodys">
-       <Navigation className="navs" />
-
-     <div className="row">
-       <div className="col-lg-3 col-md-3 app-sidebar"> 
-       <Sidebar/>
-
+      <div className="header">
+      <Navigation onClick={collapes_handller} />
       </div>
-        <div className="col-lg-9 col-md-9 app-reccomm"> 
-        <Recommendation/>
+       
+
+     <div className="row padding">
+       
+       {isopen &&<div className="col-lg-2 col-md-2 app-sidebar"> 
+       <Sidebar />
+      </div>}
+       
+        <div className="col-lg-10 col-md-10 app-reccomm mx-auto padding"> 
+        <Recommendation />
         </div>
          
          </div>
      
       
-    </div>
+         </div>
     );
-  }
+  
 }
 export default App;

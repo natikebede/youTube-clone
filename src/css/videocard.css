@@ -1,0 +1,65 @@
+.video-cards
+{   width: 100%;
+    height: auto;
+    padding:5px;   
+    transition: ease-in 0.5s;
+    margin-bottom: 10px;
+    border-radius:3px;
+}
+.video-cards:hover
+{
+cursor: pointer;
+background-color: lightgray;
+border:1px solid lightgray;
+}
+.card-imgs
+{
+width:100%;
+background-color:gray;
+height:200px;
+border-radius:3px ;
+
+}
+.card-infos
+{   margin-top: 10px;
+    display:flex;
+    padding:5px;
+}
+
+.img-icon
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+}
+.video-img
+{
+    object-fit:fill;
+    width:100%;
+    height:100%;
+    border-radius:2px;
+}
+.img
+{
+    object-fit:fill;
+    width:100%
+}
+.video-text
+{
+    margin-left: 15px;
+}
+.video-text >h5
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+.video-text >p
+{
+  margin-top:0px;
+  font-size: 12px;
+  color:gray;
+
+}

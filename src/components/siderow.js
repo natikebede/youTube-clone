@@ -1,5 +1,5 @@
 import '../css/default_css.css';
-import react from "react";
+
 
 import '../css/sidebarRow.css';
 import '../css/fontawesome.min.css';

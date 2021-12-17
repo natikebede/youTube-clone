@@ -7,9 +7,35 @@
   height: 100%;
   
 }
-.navs
+.header
 {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index:100;
 }
+.app-reccomm
+{
+  background-color: #f9f9f9;
+  
+}
+div.app-sidebar
+  {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  
+  }
+@media only screen and (max-width:  600px)
+{
+ div .header
+{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-top: ;
+  z-index:100;
+}
+ 
+}
+
